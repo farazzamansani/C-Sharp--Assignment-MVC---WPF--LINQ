@@ -1,0 +1,105 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:HRIS" x:Class="HRIS.MainWindow"
+        Title="Human Resources Information System" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="550" MinWidth="850"
+    >
+    <Window.Resources>
+        
+    </Window.Resources>
+    
+    <Grid>
+        <TabControl x:Name="Tabs">
+            <TabItem Header="Staff">
+                <Grid>
+                    <!-- This is the main grid that splits vertically -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400" />
+                        <!-- Staff list and search controls -->
+                        <ColumnDefinition Width="*"/>
+                        <!--column for user controlls (StaffDetails and UnitTimeTable)-->
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <!--For StaffList and Details And TimeTable-->
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="0">
+                        <!-- Staff list and search controls -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <!-- Filter and search controlls -->
+                            <RowDefinition Height="*"/>
+                            <!-- Staff List -->
+                        </Grid.RowDefinitions>
+                        <WrapPanel Grid.Row="0" Margin="5" Grid.ColumnSpan="2">
+                            <Label>Category Filter:</Label>
+                            <ComboBox SelectionChanged="CatFilter_SelectionChanged" Name="CatFilter">
+                                <ComboBoxItem IsSelected="True">All Categories</ComboBoxItem>
+                                <!--Other categories a generated from the Category enum in code behind-->
+                            </ComboBox>
+                            <Label>Search :</Label>
+                            <TextBox Width="140" x:Name="Seach_Staff" KeyUp="Seach_Staff_KeyUp"/>
+                        </WrapPanel>
+
+                        <DataGrid Name="Staff_List"
+                                  AutoGenerateColumns="False"
+                                  SelectionChanged="Staff_List_SelectionChanged"
+                                  CanUserAddRows="False"
+                            Margin="10,46,10,10" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                            <!--Dont want to diplay everything so manually specify the columns-->
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Family Name" Binding="{Binding family_name}"/>
+                                <DataGridTextColumn Header="Given Name" Binding="{Binding given_name}"/>
+                                <DataGridTextColumn Header="Title" Binding="{Binding title}"/>
+                                <DataGridTextColumn Header="Category" Binding="{Binding category}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <!--Staff Details-->
+                    <local:StaffDetails x:Name="Staff_Details" Grid.Column="1" />
+                    <!--Hidden timetable can be toggled-->
+                    <local:UnitTimeTable x:Name="Staff_TimeTable" 
+                                         Grid.Column="1"
+                                         Visibility="Collapsed"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Units">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400" />
+                        <!-- Units list and search controls -->
+                        <ColumnDefinition Width="*"/>
+                        <!-- The colusm for User Controlls (StaffDetails and UnitTimeTable) -->
+                    </Grid.ColumnDefinitions>
+                    
+                    <!--Unit List and Seach box-->
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <!-- search controlls -->
+                            <RowDefinition Height="*"/>
+                            <!-- Units List -->
+                        </Grid.RowDefinitions>
+                        <WrapPanel Grid.Row="0" Margin="5">
+                            <Label>Search by Unit Code or Title:</Label>
+                            <TextBox x:Name="Search_Units" KeyUp="Search_Units_KeyUp" Width="200"/>
+                        </WrapPanel>
+                        <DataGrid Name="Units_List" SelectionChanged="Units_List_SelectionChanged"
+                              CanUserAddRows="False" AutoGenerateColumns="False"
+                              Grid.Row="1" Margin="5">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Unit Code" Binding="{Binding unitcode}"/>
+                                <DataGridTextColumn Header="Title" Binding="{Binding title}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <local:UnitTimeTable x:Name="Units_TimeTable" Grid.Column="1"/>
+                    <local:StaffDetails x:Name="Units_StaffDetails" Grid.Column="1"
+                                        Visibility="Collapsed"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

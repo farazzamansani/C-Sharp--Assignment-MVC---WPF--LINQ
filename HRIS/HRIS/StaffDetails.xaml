@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="HRIS.StaffDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="433" MinWidth="430">
+    <UserControl.Resources>
+        <Style x:Key="dispText" TargetType="TextBox">
+            <!--This defines how the text boxes in staff details are displayed-->
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style x:Key="dispLabel" TargetType="Label">
+            <!--Style applied to all labels in staff details-->
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style x:Key="dispBlock" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Grid.Column="1" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Grid.ColumnSpan="3"
+                Content="Return to TimeTable"
+                Margin="5" Height="30"
+                Visibility="Visible"
+                x:Name="Back_Button"
+                Click="Back_Button_Click"/>
+        <Border BorderThickness="1" Grid.Row="1"
+                Grid.Column="2" Margin="5" Grid.RowSpan="3" 
+                Background="LightBlue">
+            <Image Source="{Binding photo}"/>
+        </Border>
+        <Label Grid.Row="1" Style="{StaticResource dispLabel}">Title :</Label>
+        <TextBox Grid.Row="1" Style="{StaticResource dispText}" Text="{Binding title}"/>
+
+        <Label Grid.Row="2" Style="{StaticResource dispLabel}">Family Name :</Label>
+        <TextBox Grid.Row="2" Style="{StaticResource dispText}" Text="{Binding family_name}"/>
+
+        <Label Grid.Row="3" Style="{StaticResource dispLabel}">Given Name :</Label>
+        <TextBox Grid.Row="3" Style="{StaticResource dispText}" Text="{Binding given_name}"/>
+
+        <Label Grid.Row="4" Style="{StaticResource dispLabel}">Campus :</Label>
+        <TextBox Grid.Row="4" Style="{StaticResource dispText}" Text="{Binding campus}"/>
+        
+        <Label Grid.Row="5" Style="{StaticResource dispLabel}">Phone :</Label>
+        <TextBox Grid.Row="5" Style="{StaticResource dispText}" Text="{Binding phone}"/>
+        
+        <Label Grid.Row="6" Style="{StaticResource dispLabel}">Room :</Label>
+        <TextBox Grid.Row="6"  Style="{StaticResource dispText}" Text="{Binding room}"/>
+        
+        <Label Grid.Row="7" Style="{StaticResource dispLabel}">Email :</Label>
+        <TextBox Grid.Row="7" Style="{StaticResource dispText}" Text="{Binding email}"/>
+        
+        <Label Grid.Row="8" Style="{StaticResource dispLabel}">Category :</Label>
+        <TextBox Grid.Row="8" Style="{StaticResource dispText}" Text="{Binding category}"/>
+        
+        <!--Units the staff emember is enrolled in. Data is set by property of this user controll-->
+        <!--<TextBlock Grid.Row="4" Grid.Column="2" Style="{StaticResource dispBlock}">
+        Teaching This Semester:
+        </TextBlock>-->
+        <!--NOTE: Dont need a title now with the format change and datagids can have more space-->
+        <DataGrid x:Name="unitsInvolved_Grid"
+                  Grid.Column="2" Grid.Row="4" Grid.RowSpan="3"
+                  AutoGenerateColumns="False" CanUserAddRows="False"
+                  SelectionChanged="unitsInvolved_Grid_SelectionChanged">
+            <DataGrid.Columns>
+                <!--Multibinding to match display asked for in testing report-->
+                <DataGridTextColumn Header="Teaching this semester:">
+                    <DataGridTextColumn.Binding>
+                        <MultiBinding StringFormat="{}{0} {1}">
+                            <Binding Path="unitcode"/>
+                            <Binding Path="title"/>
+                        </MultiBinding>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
+                <!--<DataGridTextColumn Header="Unit Code" Binding="{Binding unitcode}"/>
+                <DataGridTextColumn Header="Title" Binding="{Binding title}"/>-->
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Row="6" Grid.Column="2" Style="{StaticResource dispLabel}"/>
+        <!--<TextBlock Grid.Row="7" Grid.Column="2" Style="{StaticResource dispBlock}">
+            Consultation Times:
+        </TextBlock>-->
+        <!--NOTE: Dont need a title now with the format change and datagids can have more space-->
+        <DataGrid x:Name="Consultation_Times_Grid"
+                  Grid.Column="2" Grid.Row="7" Grid.RowSpan="3"
+                  AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <!--Multibinding to match display asked for in testing report-->
+                <DataGridTextColumn Header="Consultation Times">
+                    <DataGridTextColumn.Binding>
+                        <MultiBinding StringFormat="{}{0}-{1} {2}">
+                            <Binding Path="starttime"/>
+                            <Binding Path="endtime"/>
+                            <Binding Path="day"/>
+                        </MultiBinding>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
+                <!--<DataGridTextColumn Header="Day" Binding="{Binding day}"/>
+                <DataGridTextColumn Header="Starts" Binding="{Binding starttime}"/>
+                <DataGridTextColumn Header="Ends" Binding="{Binding endtime}"/>-->
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <!--Availability of Staff Member-->
+        <Label Grid.Row="9" Style="{StaticResource dispLabel}">Availability :</Label>
+        <TextBox Grid.Row="9" Style="{StaticResource dispText}" Text="{Binding availability}"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,64 @@
+D:\University\ICT\Year 2\Semester 2\KIT 206\HRIS\HRIS\bin\Debug\HRIS.exe.config
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\bin\Debug\HRIS.exe.config
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS.exe
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS.pdb
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS.csprojResolveAssemblyReference.cache
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\StaffDetails.baml
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\MainWindow.g.cs
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\StaffDetails.g.cs
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\App.g.cs
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS_MarkupCompile.cache
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS_MarkupCompile.lref
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\bin\Debug\HRIS.exe
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\bin\Debug\HRIS.pdb
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\MainWindow.baml
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS.g.resources
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS.Properties.Resources.resources
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\HRIS.csproj.GenerateResource.Cache
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\testgridBlah.baml
+C:\Users\bhayes1\Desktop\New folder\HRIS\HRIS\obj\Debug\testgridBlah.g.cs
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\bin\Debug\HRIS.exe.config
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\bin\Debug\HRIS.exe
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\bin\Debug\HRIS.pdb
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\StaffDetails.baml
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\UnitTimeTable.baml
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\MainWindow.g.cs
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\StaffDetails.g.cs
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\UnitTimeTable.g.cs
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\App.g.cs
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\GeneratedInternalTypeHelper.g.cs
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS_MarkupCompile.cache
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS_MarkupCompile.lref
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\MainWindow.baml
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS.g.resources
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS.Properties.Resources.resources
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS.csproj.GenerateResource.Cache
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS.exe
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS.pdb
+X:\_UTAS\KIT206 Software Design & Developement\Assignment 2\SVN Repository\HRIS\HRIS\obj\Debug\HRIS.csprojResolveAssemblyReference.cache
+P:\tortoisetest2\HRIS\HRIS\bin\Debug\HRIS.exe.config
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS.csprojResolveAssemblyReference.cache
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\StaffDetails.baml
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\UnitTimeTable.baml
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\MainWindow.g.cs
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\StaffDetails.g.cs
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\UnitTimeTable.g.cs
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\App.g.cs
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS_MarkupCompile.cache
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS_MarkupCompile.lref
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\bin\Debug\HRIS.exe.config
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\bin\Debug\HRIS.exe
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\bin\Debug\HRIS.pdb
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\bin\Debug\MySql.Data.dll
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\bin\Debug\MySql.Data.xml
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\MainWindow.baml
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS.g.resources
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS.Properties.Resources.resources
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS.csproj.GenerateResource.Cache
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS.exe
+C:\Users\faraz\Downloads\github stuff\HRIS\HRIS\obj\Debug\HRIS.pdb
